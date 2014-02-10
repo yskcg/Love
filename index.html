@@ -9,10 +9,13 @@
 			src: url('digital-7_mono.ttf') format("truetype");
 		}
 	</style>
-	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<link href="css/default_dev.css" type="text/css" rel="stylesheet">
 	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/garden.js"></script>
-    <script type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript" src="js/garden_dev.js"></script>
+    <script type="text/javascript" src="js/functions_dev.js"></script>
+    <audio src="喜欢两个人.mp3"  autoplay="true" loop="loop" draggable="true">
+	您的浏览器不支持 audio 标签
+	</audio>
 </head>
 
 <body>
@@ -20,57 +23,56 @@
 		<div id="content">
 			<div id="code">
 				<span class="comments">/**</span><br />
-				<span class="space"/><span class="comments">* We are both Fudan SSers and programmers,</span><br />
-				<span class="space"/><span class="comments">* so I write some code to celebrate our 1st anniversary.</span><br />
+				<span class="space"/><span class="comments">* 大科甲巷-伊藤，当我第一次见你的时候，你就是我生命中的白雪公主</span><br />
+				<span class="space"/><span class="comments">* 你面含微笑，明亮的双眸充满善良，那一刻，一直在我脑海中闪现.</span><br />
 				<span class="space"/><span class="comments">*/</span><br />
-				Boy i = <span class="keyword">new</span> Boy(<span class="string">"hackerzhou"</span>);<br />
-				Girl u = <span class="keyword">new</span> Girl(<span class="string">"MaryNee"</span>);<br />
-				<span class="comments">// Nov 2, 2010, I told you I love you. </span><br />
-				i.love(u);<br />
-				<span class="comments">// Luckily, you accepted and became my girlfriend eversince.</span><br />
-				u.accepted();<br />
-				<span class="comments">// Since then, I miss u every day.</span><br />
-				i.miss(u);<br />
-				<span class="comments">// And take care of u and our love.</span><br />
+				犯二的我: <span class="keyword">羊少坤</span> -(<span class="string">"I love you ,做我女朋友吧？"</span>);<br />
+				深爱的: <span class="keyword">彭璟</span> -(<span class="string">"答应我吧！(你不知道如果你说答应，我心里会有多高兴)"</span>);<br />
+				<span class="comments">// 回想我们刚开始的时候：我发邮件给你，希望你能回复我邮件或者加我好友 </span><br />
+				i.love(U);<br />
+				<span class="comments">// 你不仅回复了我的邮件还给我发了QQ的好友申请，那一天我心中充满了希望</span><br />
+				Want(U).accepted();<br />
+				<span class="comments">// 之后的时光，我们过的很happy</span><br />
+				<span class="comments">// 你和我一起看电影，我再也不用一个人去看电影了.</span><br />
+				<span class="comments">// 你和我一起买菜，我做菜给你吃.</span><br />
+				<span class="comments">// 我却老是做的没有味道或者是咸，不管味道如何，我能感觉道你也是甜蜜的.</span><br />
+				<span class="comments">// 我们一起逛公园，一起做公交，一起给彼此力量，一起做我们想做的事情.</span><br />
+				but.miss(u);<br />
+				<span class="comments">// 春节，一个喜庆的节日，却让我过的不那么快乐.</span><br />
 				i.takeCareOf(u);<br />
-				<span class="comments">// You say that you won't be so easy to marry me.</span><br />
-				<span class="comments">// So I keep waiting and I have confidence that you will.</span><br />
-				<span class="keyword">boolean</span> isHesitate = <span class="keyword">true</span>;<br />
-				<span class="keyword">while</span> (isHesitate) {<br />
-				<span class="placeholder"/>i.waitFor(u);<br />
-				<span class="placeholder"/><span class="comments">// I think it is an important decision</span><br />
-				<span class="placeholder"/><span class="comments">// and you should think it over.</span><br />
-				<span class="placeholder"/>isHesitate = u.thinkOver();<br />
-				}<br />
-				<span class="comments">// After a romantic wedding, we will live happily ever after.</span><br />
-				i.marry(u);<br />
-				i.liveHappilyWith(u);<br />
+				<span class="comments">// 你说家里面人反对你和我的交往</span><br />
+				<span class="comments">// 我那时纠结的哭不出泪来，抢花那天的情景真想笑，却始终笑不出来</span><br />
+				<span class="comments">// 我知道那时的你也纠结，也心痛，也有和我一样的感受</span><br />
+				i.wish(u) happy;<br />
+				<span class="comments">// 春节结束，我们衷与内心，给彼此最大的安慰 </span><br />
+				<span class="comments">// 希望我们彼此的感情伴随着现实带给我们的挫折愈发坚若磐石</span><br />
+				<span class="comments">// 爱你，不需要一点理由，直觉告诉我，爱你，就是我最好的财富</span><br />
 			</div>
 			<div id="loveHeart">
 				<canvas id="garden"></canvas>
 				<div id="words">
 					<div id="messages">
-						Minyue, I have fallen in love with you for
+						丢丢, I have fallen in love with you for
 						<div id="elapseClock"></div>
 					</div>
 					<div id="loveu">
 						Love u forever and ever.<br/>
-						<div class="signature">- hackerzhou</div>
+						<div class="signature">- 羊少坤</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div id="copyright">
 			Inspired by <a href="http://www.openrise.com/lab/FlowerPower/">FlowerPower</a> project.<br />
-			Copyright © 2011 <a href='http://hackerzhou.me'>hackerzhou.me</a> 2009-2011
+			<!--Copyright © 2014 </---Copyright><a href='http://hackerzhou.me'>hackerzhou.me</a> 2009-2011--->
 		</div>
 	</div>
 	<script type="text/javascript">
 		var offsetX = $("#loveHeart").width() / 2;
 		var offsetY = $("#loveHeart").height() / 2 - 55;
 		var together = new Date();
-		together.setFullYear(2010, 10, 2);
-		together.setHours(20);
+		together.setFullYear(2013, 11, 21);
+		together.setHours(0);
 		together.setMinutes(0);
 		together.setSeconds(0);
 		together.setMilliseconds(0);
